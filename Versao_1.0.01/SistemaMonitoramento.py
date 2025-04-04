@@ -54,11 +54,12 @@ else:
     print("Geração de Resíduos Não Recicláveis: Alta Sustentabilidade")
 
 # Uso de transporte
-if (publico or bicicleta or caminhada or carroEletrico) and (carro or carona) == "S" or "s":
-    print("Uso de Transporte: Moderado Sustentabilidade")
+if (publico == "S" or publico == "s") or (bicicleta == "S" or bicicleta == "s") or (caminhada == "S" or caminhada == "s") or (carroEletrico == "S" or carroEletrico == "s"):
+    if (carro == "S" or carro == "s") or (carona == "S" or carona =="s"):  
+        print("Uso de Transporte: Moderado Sustentabilidade")
+    else:
+        print("Uso de Transporte: Alta Sustentabilidade")
 
-elif (publico or bicicleta or caminhada or carroEletrico) == "S" or "s":
-    print("Uso de Transporte: Alta Sustentabilidade")
-    
-elif (carro or carona) == "S" or "s":
-    print("Consumo de energia: Baixa Sustentabilidade")
+elif (carro == "S" or carro == "s") or (carona == "S" or carona == "s"):
+        
+    print("Uso de Transporte: Baixa Sustentabilidade")
