@@ -6,8 +6,8 @@ import os
 conexao = mysql.connector.connect(
 host="localhost", # IP ou hostname do servidor MySQL
 user="root", # "login"
-password="Jmr&012108", # senha
-database="JoaoPaulo" # nome do banco (tem que existir)
+password="", # senha
+database="" # nome do banco (tem que existir)
 )
 cursor = conexao.cursor()
 
