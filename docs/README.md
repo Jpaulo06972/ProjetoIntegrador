@@ -3,50 +3,50 @@
 ## 📝 Descrição
 Projeto integrador desenvolvido no 1º semestre de Engenharia de Software, que permite monitorar indicadores de sustentabilidade (água, energia, resíduos e transporte) com:
 
-    - Cadastro de dados diários.
+    Cadastro de dados diários.
 
-    - Classificação automática (Alta/Moderada/Baixa sustentabilidade).
+    Classificação automática (Alta/Moderada/Baixa sustentabilidade).
 
-    - Criptografia dos dados de classificação (matriz 2x2).
+    Criptografia dos dados de classificação (matriz 2x2).
 
-    - Relatórios e médias de consumo.
+    Relatórios e médias de consumo.
 
 ## ⚙️ Funcionalidades
 ### ✔ CRUD Completo:
 
-    - Cadastro, alteração e exclusão de registros.
+    Cadastro, alteração e exclusão de registros.
     
-    - Persistência em banco de dados MySQL.
+    Persistência em banco de dados MySQL.
 
 ### ✔ Classificação Automática:
 
-    - Consumo de água (<150L = Alta, 150-200L = Moderada, >200L = Baixa).
+    Consumo de água (<150L = Alta, 150-200L = Moderada, >200L = Baixa).
     
-    - Consumo de energia (<5kWh = Alta, 5-10kWh = Moderada, >10kWh = Baixa).
+    Consumo de energia (<5kWh = Alta, 5-10kWh = Moderada, >10kWh = Baixa).
     
-    - Resíduos reciclados (>80% = Alta, 50-80% = Moderada, <50% = Baixa).
+    Resíduos reciclados (>80% = Alta, 50-80% = Moderada, <50% = Baixa).
     
-    - Transporte (prioriza veículos sustentáveis).
+    Transporte (prioriza veículos sustentáveis).
 
 ### ✔ Criptografia:
 
-    - Usa matrizes 2x2 para cifrar classificações (ex: "Alta" → "KZ").
+    Usa matrizes 2x2 para cifrar classificações (ex: "Alta" → "KZ").
 
 ### ✔ Relatórios:
     
-    - Médias de consumo.
+    Médias de consumo.
     
-    - Visualização de dados brutos e classificações descriptografadas.
+    Visualização de dados brutos e classificações descriptografadas.
 
 ## 🛠️ Tecnologias Utilizadas
 ### Área Tecnologias
-    - Back-end	
+    Back-end	
         - Python 3.13
-    - Banco de Dados 
+    Banco de Dados 
         - MySQL (mysql-connector-python)
-    - Criptografia
+    Criptografia
         - Matrizes 2x2 (Hill Cipher simplificado)
-    - Interface	
+    Interface	
         - Terminal (CLI)
 
 ## 📦 Estrutura do Código
@@ -65,24 +65,24 @@ Projeto integrador desenvolvido no 1º semestre de Engenharia de Software, que p
 
 ### Principais Funções
 
-    - cripto(texto):
+    cripto(texto):
         - Cifra textos usando matriz [[4, 3], [1, 2]].
         - Ex: "Alta" → "KZ".
         
-    - descriptografia(texto_cifrado):
+    descriptografia(texto_cifrado):
     
         - Decifra textos com a matriz inversa.
     
-    - Classificação:
+    Classificação:
     
         - Lógica baseada em thresholds pré-definidos.
 
 ## 🚀 Como Executar
 ### Pré-requisitos:
 
-    - Python 3.13 + MySQL.
+    Python 3.13 + MySQL.
 
-    - Bibliotecas: mysql-connector-python.
+    Bibliotecas: mysql-connector-python.
 ## 📦 Configure o Banco de Dados:
 📂 ProjetoIntegrador/
 └── database/
@@ -90,7 +90,7 @@ Projeto integrador desenvolvido no 1º semestre de Engenharia de Software, que p
     └── scripts/ (opcional para futuros scripts SQL)
 
 ### Execute o Sistema:
-    - python MonitoramentoApresenta.py
+    python MonitoramentoApresenta.py
 
 ## 🖥️ Menu do Sistema
     =============================================================
@@ -105,11 +105,11 @@ Projeto integrador desenvolvido no 1º semestre de Engenharia de Software, que p
     6. Sair.
         
 ## 📌 Melhorias Futuras
-    - Interface web (Flask/Django).
+    Interface web (Flask/Django).
 
-    - Gráficos com matplotlib.
+    Gráficos com matplotlib.
 
-    - Dashboard com métricas em tempo real.
+    Dashboard com métricas em tempo real.
 
 ## 📄 Licença
     GNU General Public License v3.0.
